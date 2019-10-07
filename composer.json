@@ -1,0 +1,6 @@
+{
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "php-curl-class/php-curl-class": "^8.6"
+    }
+}
