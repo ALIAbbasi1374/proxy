@@ -624,7 +624,7 @@ class jdf{
 
 	public function timestamp__persian($timestamp, $separator='٫', $spaceChar=' ', $ret_date=true, $ret_time= true ){
 		$date = explode(' ',$timestamp)[0];
-		$d    = explode( '-',$date );
+		$d    = explode('-',$date );
 		$time = explode(' ',$timestamp)[1];
 		if( $ret_date && $ret_time )
 			return $this->gregorian_to_jalali($d[0],$d[1],$d[2],$separator) . $spaceChar. $time;

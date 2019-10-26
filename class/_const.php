@@ -3,7 +3,7 @@
 define('BASE', 'https://yoursite.io');
 
 // Database Credentials
-define('DB_NAME', 'panel');
+define('DB_NAME', 'hooshebara_pico');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 

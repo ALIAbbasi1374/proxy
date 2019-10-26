@@ -10,16 +10,18 @@ foreach (glob("./class/*.php") as $filename) {
     include $filename;
 }
 # include all models
+// instantiate Classes
+ db::init();
+$io = new IO;
 foreach (glob("./model/*.php") as $filename) {
     include $filename;
 }
 
-// instantiate Classes
- db::init();
-$io = new IO;
-
 # include all routes
 foreach (glob("./routes/*.php") as $filename) {
+    include $filename;
+}
+foreach (glob("./webAPI/*.php") as $filename) {
     include $filename;
 }
 
